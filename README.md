@@ -1,1 +1,71 @@
-# oosdf
+# Online ordering system: design first
+
+## Checklist
+- [ ] Model: 요구사항에 필요한 엔티티를 설계하고 적절한 연관관계를 맺도록 설정했나?
+- [ ] Test: 테스트를 위한 충분한 메뉴 데이터가 채워져 있나?
+- [ ] Router: 기능별, 역할(주문자와 피주문자)별 라우팅 그룹 구성이 도움이 되었나?
+- [ ] MVC: Control의 비지니스 로직과 Model의 데이터 핸들링으로 MVC 패턴이 잘 구성이 되었나?
+- [ ] Architecture: 주문 상태에 따른 비즈니스 로직을 서비스 레이어에서 모두 처리해 테스트가 복잡해지지 않았나?
+- [ ] MongoDB: 평점 합산 및 평균 처리하기 위해 aggregate를 활용해보는건 어떨까?
+
+## References
+- Repo
+  - [User management 1](https://github.com/Mr-Malomz/gin-mongo-api)
+  - [User management 2](https://github.com/DevProblems/go-gin-mongo)
+  - [WTF Dial](https://github.com/benbjohnson/wtf)
+  - [Artifact](https://github.com/Shipu/artifact)
+  - [Awesome Go](https://github.com/avelino/awesome-go)
+  - [Awesome Gin](https://github.com/FlowerWrong/awesome-gin)
+- Article
+  - [Bookmarker](https://dev.to/wchr/create-api-with-gin-in-golang-part-1-i7d)
+  - [Bookstore](https://santoshk.dev/posts/2022/building-a-bookstore-api-in-golang-with-gin/)
+  - [Microservice with Go](https://blog.logrocket.com/building-microservices-go-gin/)
+  - [MVC with Go](https://www.calhoun.io/using-mvc-to-structure-go-web-applications/)
+- Tutorial
+  - [API with Go and Gin](https://go.dev/doc/tutorial/web-service-gin)
+
+## TODO
+- [ ] Populate database with toy data
+- [ ] Make a feature table like [this](https://realpython.com/flask-connexion-rest-api/#planning-part-one)
+- [ ] DB
+  - Local: [Docker image](https://hub.docker.com/_/mongo)
+  - Cloud: [MongoDB Atlas](https://www.mongodb.com/atlas)
+- [ ] File
+  - .env
+  - Makefile
+  - Dockerfile
+- [ ] README
+  - [x] 기술 스택
+  - [ ] 프로젝트 구조
+  - [ ] 기능 설명
+  - [ ] 개발 환경
+  - [ ] 설치 방법
+    - Windows
+    - macOS
+    - Linux
+  - [ ] 사용 방법
+  - [ ] Korean → English
+- [ ] Test
+  - [ ] [testing](https://pkg.go.dev/testing)
+  - [ ] [testify](https://github.com/stretchr/testify)
+- [ ] Validation: 
+  - [x] [gin](https://gin-gonic.com/docs/examples/binding-and-validation/)
+  - [ ] [gookit/validate](https://github.com/gookit/validate)
+  - [ ] [phonenumbers](https://github.com/nyaruka/phonenumbers)
+  - [ ] [address](https://github.com/Boostport/address)
+- [ ] Documentation: [Reddit](https://www.reddit.com/r/golang/comments/udfujj/any_good_openapi_3x_spec_generator_for_a_go_rest/)
+  - Code first
+    - [OAS2.0: swag](https://github.com/swaggo/swag)
+    - [OAS3.0: swaggest/rest](https://github.com/swaggest/rest)
+  - Design first
+    - [goa](https://goa.design/)
+    - [oapi-codegen](https://github.com/deepmap/oapi-codegen)
+    - [ogen](https://github.com/ogen-go/ogen)
+- [ ] Configuration: [viper](https://github.com/spf13/viper)
+- [ ] Style guide: [Google](https://google.github.io/styleguide/go/)
+- [ ] Security
+  - [ ] Authentication
+  - [ ] Authorization
+- [ ] API
+  - [ ] GraphQL
+  - [ ] gRPC
