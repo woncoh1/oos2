@@ -1,5 +1,5 @@
 # Online ordering system: design first
-> Minimal API for online ordering with design-first code generation
+> Minimal API for online ordering made with code generation
 
 ## Tech stack
 - Programming language: [Go](https://go.dev/)
